@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.input-box {
+  min-width: 600px;
+  display: block;
+}
+.input-box input {
+  width: 90%;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 8px;
+  border: 2px solid #646cff;
+  margin-bottom: 15px;
+}
+.random-box {
+  min-width: 600px;
+  margin: 20px 0;
+  padding: 10px;
+  background: #7e8af725;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+.random-box ul {
+  width: 100%;
+  display: block;
+  text-align: start;
+  align-items: center;
+  justify-content: center;
+}
+.random-box ul li {
+  width: 500px;
+  padding: 0.5em 0.8em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: ease 0.5s;
+}
+.random-box ul li:hover {
+  background: #646cff;
+  color: #fff;
+  border-radius: 5px;
+}
+.random-box ul li:hover .delete {
+  opacity: 1;
+}
+/* .random-box ul li.active {
+  background-color: #646cff;
+  color: #fff;
+} */
+.random-box .delete {
+  opacity: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.animebtn {
+  width: 100%;
+}
+.animate {
+  animation: colorChange 1s infinite alternate;
+}
+.nameresult {
+  width: 15em;
+  color: #fff;
+  position: absolute;
+  padding: 0.5em 0.8em;
+  font-size: 1.5em;
+  right: 8em;
+  top: 50%;
+  background: #646cff;
+  border-radius: 3px;
+}
+.emoji {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: purple;
+  }
+}
